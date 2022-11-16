@@ -1,6 +1,6 @@
 # Xin Wu
 
-![](https://s3.bmp.ovh/imgs/2022/11/15/6bf2539f9b153b09.jpg)
+![wux024.jpg](https://tva1.sinaimg.cn/large/c19ce516gy1h86uvi9o0gj208207ndfz.jpg)
 
 [:fontawesome-brands-orcid:](https://orcid.org/0000-0002-6250-4218)[:fontawesome-brands-github:](https://github.com/wux024)
 

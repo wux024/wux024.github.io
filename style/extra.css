@@ -7,7 +7,6 @@
     }
   }
 .heart {
-  color: #FF0000;
   animation: heart 1000ms infinite;
 }
     

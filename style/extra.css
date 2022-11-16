@@ -1,14 +1,15 @@
 @keyframes heart {
     0%, 40%, 80%, 100% {
+      color: red;
       transform: scale(1);
     }
     20%, 60% {
+      color: red;
       transform: scale(1.2);
     }
   }
 
 .heart {
-  color: red;
   animation: heart 1000ms infinite;
 }
 

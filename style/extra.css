@@ -6,15 +6,8 @@
       transform: scale(1.2);
     }
   }
-
 .heart {
-  animation: heart 1000ms infinite;
-}
-.rheart {
   color: #FF0000;
-}
-
-.twitter {
-    color: #1DA1F2;
+  animation: heart 1000ms infinite;
 }
     

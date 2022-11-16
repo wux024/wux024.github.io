@@ -64,7 +64,10 @@ extra:
       link: https://github.com/squidfunk
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/mkdocs-material/
-    
+
+extra_css:
+  - style/extra.css
+
 nav:
   - Home: index.md
 

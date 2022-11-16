@@ -8,12 +8,10 @@
   }
 
 .heart {
+  color: red;
   animation: heart 1000ms infinite;
 }
 
-.red_heart {
-  color: red;
-}
 .twitter {
     color: #1DA1F2;
 }

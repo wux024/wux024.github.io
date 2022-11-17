@@ -4,7 +4,7 @@
 
 [:fontawesome-brands-orcid:](https://orcid.org/0000-0002-6250-4218)[:fontawesome-brands-github:](https://github.com/wux024)
 
-:octicons-heart-fill-24:{ .heart } **Research Interest:** Pose Estimation; Multimodal; Embodied Intelligence; Underwater Image Processing; Machine Learning and Differential Equation
+:octicons-heart-fill-24:{ .heart } **Research Interest:** Pose Estimation; Multimodal; Embodied Intelligence; Underwater Image Processing; Machine Learning & Differential Equation
 ## Education
 <!--**2023/09 to present** School of Physics, *Northeast Normal University* **Ph.D**-->
 :mortar_board: **2019/09-2022/06** School of Physics, *Northeast Normal University* **M.S.**
@@ -34,8 +34,8 @@
 :trophy: **2018/12** *Northeast Normal University* **The First Prize Scholarship**
 ## Conference and Visit
 :newspaper: **2020/06** ICAICA 2020(oral) Dalian,China
-## Link
+## Links
 <!--**Lab Homepage**-->
-:house: **Personal Homepage** <https://wux024.github.io>
+[:house:](https://wux024.github.io) **Personal Homepage** <https://wux024.github.io>
 
 :e-mail: **Contact Me** <wux024@nenu.edu.cn>

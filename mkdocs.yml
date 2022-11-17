@@ -68,9 +68,23 @@ extra:
 extra_css:
   - style/extra.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Home: index.md
+  - Research:
+    - Pose Estimation: research/pose_estimation.md
+    - Multimodal: research/multimodal.md
+    - Embodied Intelligence: research/embodied_intelligence.md
+    - Underwater Image Processing: research/underwater_image_processing.md
+    - Machine Learning & Differential Equation: research/machine_learning_and_differential_equation.md
 
-  
+
+
+
+
 
 

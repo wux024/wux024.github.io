@@ -3,7 +3,7 @@
 site_name: Xin Wu
 site_url: https://wux024.github.io/
 # Repository
-repo_url: https://github.com/wux024
+# repo_url: https://github.com/wux024
 
 
 # Configuration
@@ -12,6 +12,9 @@ theme:
   font: false
   icon:
     logo: material/mace
+
+
+edit_uri: ""
 
 # Extensions
 markdown_extensions:

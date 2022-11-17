@@ -34,6 +34,12 @@
 :trophy: **2018/12** *Northeast Normal University* **The First Prize Scholarship**
 ## Conference and Visit
 :newspaper: **2020/06** ICAICA 2020(oral) Dalian,China
+## Math Docs
+:page_facing_up: [势函数的Fourier变换](https://kdocs.cn/l/cdeJ8Vk3n9CE)
+
+:page_facing_up: [Fermi分布的Poisson求和证明及其他扩展](https://kdocs.cn/l/caV8ZVQYKKS9)
+
+:page_facing_up: [一个态密度函数的逼近](https://kdocs.cn/l/cm1FOsVQAajY)
 ## Links
 <!--**Lab Homepage**-->
 [:house:](https://wux024.github.io) **Personal Homepage** <https://wux024.github.io>

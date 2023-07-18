@@ -6,22 +6,22 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yi Ren (任意)"
-description              : "Research scientist in Bytedance AI Lab, Speech & Audio Team. Focusing on speech, NLP and music."
-repository               : "rayeren/rayeren.github.io"
+title                    : "Xin Wu (吴鑫)"
+description              : "Research scientist in Intelligent Perception and Optoelectronic Information Processing Group, Northeast Normal University. Focusing on Multimodal, Embodied Intelligence."
+repository               : "wux024/wux024.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : G-SWFCX99KQZ
+# google_analytics_id      : G-SWFCX99KQZ
 
 # SEO Related
-google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
-bing_site_verification   : B5AA590E7B9C03956A6F7DEC0F776211
-baidu_site_verification  : code-ZxFK3f4pfb
+# google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
+# bing_site_verification   : B5AA590E7B9C03956A6F7DEC0F776211
+# baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Yi Ren (任意)"
+  name             : "Xin Wu (吴鑫)"
   avatar           : "images/ry_profile.jpeg"
   bio              : "Bytedance AI Lab"
   location         : "Singapore"

@@ -22,14 +22,14 @@ google_scholar_stats_use_cdn : true
 # Site Author
 author:
   name             : "Xin Wu (吴鑫)"
-  avatar           : "images/ry_profile.jpeg"
-  bio              : "Bytedance AI Lab"
-  location         : "Singapore"
+  avatar           : "images/android-chrome-192x192.png"
+  bio              : "Intelligent Perception and Optoelectronic Information Processing Group"
+  location         : "Changchun, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
-  email            : "rayeren613@gmail.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=8GiHdmQAAAAJ"
+  email            : "wux024@nenu.edu.cn"
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -37,18 +37,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "RayeRen"
+  github           : "Adam Wiveion"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : 
   lastfm           :
-  linkedin         : "rayeren"
-  dblp             : "https://dblp.org/pid/75/6568-6.html"
-  orcid            : "https://orcid.org/0000-0002-9160-3848"
+  linkedin         : 
+  dblp             : 
+  orcid            : "https://orcid.org/0000-0002-6250-4218"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : 

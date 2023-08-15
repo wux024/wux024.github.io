@@ -108,5 +108,6 @@ Jinglin Liu, Chengxi Li, **Yi Ren**, Feiyang Chen, Zhou Zhao
 ## Others
 - ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren**
 -->
+- Wang, L., **Wu, X.**. (2023). [Method for 3D motion parameter measurement based on pose estimation](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). *Journal of Jilin University(Engineering and Technology Edition)*, 53(07):2099-2108.
 - **Wu, X.**, Wang, Y., Chen, L., Zhang, L., & Wang, L. (2022). [Motion parameters measurement of user-defined key points using 3D pose estimation](https://doi.org/10.1016/j.engappai.2022.104667). *Engineering Applications of Artificial Intelligence*, 110, 104667.
 - **Wu, X.**, Wei, Z., Hu, Y., & Wang, L. (2020, June). [Traffic Sign Detection Method Using Multi-Color Space Fusion](https://doi.org/10.1109/ICAICA50127.2020.9182603). In 2020 *IEEE International Conference on Artificial Intelligence and Computer Applications* (ICAICA) (pp. 314-319). IEEE.

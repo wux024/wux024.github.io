@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xin Wu (吴鑫)"
-description              : "Research scientist in Intelligent Perception and Optoelectronic Information Processing Group. Focusing on multimodal and intelligent perception."
+description              : "书生意气自不足 欲通造化天地心"
 repository               : "wux024/wux024.github.io"
 # google_scholar_stats_use_cdn : true
 
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Adam Wiveion"
+  github           : "https://github.com/wux024"
   google_plus      :
   keybase          :
   instagram        :

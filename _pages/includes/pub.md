@@ -1,5 +1,5 @@
 # 📝 Publications 
-- **Wu, X.**, Huang, J., & Wang, L. (2024). Pose estimation-based visual perception system for analyzing fish swimming. IEEE Sensors Journal.
+- **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). IEEE Sensors Journal.
 - Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/https://doi.org/10.1016/j.infrared.2024.105246). Infrared Physics & Technology, 138, 105246.
 - Wang, L., **Wu, X.** (2023). [Method for 3D motion parameter measurement based on pose estimation](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). *Journal of Jilin University(Engineering and Technology Edition)*, 53(7), 2099-2108.
 - Feng, D., Zhou, C., Huang, J., Luo, G., & **Wu, X.** (2023). [Design and Implementation of Gesture Recognition System Based on Flex Sensors](https://doi.org/10.1109/JSEN.2023.3324503). IEEE Sensors Journal, 23(24), 31389–31398. 

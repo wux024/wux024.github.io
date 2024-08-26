@@ -1,4 +1,5 @@
 # 📝 Publications 
+- **Wu, X.**, Zhang, L.,Huang, J., & Wang, L. (2024). [Underwater Image Enhancement via Modeling White Degradation](https://ieeexplore.ieee.org/document/10647107). IEEE Journal of Oceanic Engineering.
 - **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). IEEE Sensors Journal, 24(8), 13293 - 13303.
 - Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/https://doi.org/10.1016/j.infrared.2024.105246). Infrared Physics & Technology, 138, 105246.
 - Wang, L., **Wu, X.** (2023). [Method for 3D motion parameter measurement based on pose estimation](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). *Journal of Jilin University(Engineering and Technology Edition)*, 53(7), 2099-2108.

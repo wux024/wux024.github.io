@@ -1,5 +1,5 @@
 # 📝 Publications 
-- **Wu, X.**, Huang, J., & Wang, L. (2024). LUO-V2 and MSPerception: A multi-fin co-drive robotic fish and its multi-sensor-based experimental system. Ocean Engineering.
+- **Wu, X.**, Huang, J., & Wang, L. (2024). [LUO-V2 and MSPerception: A multi-fin co-drive robotic fish and its multi-sensor-based experimental system](https://doi.org/10.1016/j.oceaneng.2024.119273). Ocean Engineering, 312, Part3, 119273.
 - **Wu, X.**, Zhang, L.,Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). IEEE Journal of Oceanic Engineering.
 - **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). IEEE Sensors Journal, 24(8), 13293 - 13303.
 - Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/https://doi.org/10.1016/j.infrared.2024.105246). Infrared Physics & Technology, 138, 105246.

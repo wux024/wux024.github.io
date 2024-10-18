@@ -1,6 +1,6 @@
 # 📝 Publications 
 - **Wu, X.**, Huang, J., & Wang, L. (2024). [LUO-V2 and MSPerception: A multi-fin co-drive robotic fish and its multi-sensor-based experimental system](https://doi.org/10.1016/j.oceaneng.2024.119273). Ocean Engineering, 312, Part3, 119273.
-- **Wu, X.**, Zhang, L.,Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). IEEE Journal of Oceanic Engineering.
+- **Wu, X.**, Zhang, L.,Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). IEEE Journal of Oceanic Engineering, 49(4), 1220-1232.
 - **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). IEEE Sensors Journal, 24(8), 13293 - 13303.
 - **Wu, X.**, Wang, Y., Chen, L., Zhang, L., & Wang, L. (2022). [Motion parameters measurement of user-defined key points using 3D pose estimation](https://doi.org/10.1016/j.engappai.2022.104667). Engineering Applications of Artificial Intelligence, 110, 104667.
 - **Wu, X.**, Wei, Z., Hu, Y., & Wang, L. (2020). [Traffic sign detection method using multi-color space fusion](https://doi.org/10.1109/ICAICA50127.2020.9182603). 2020 IEEE International Conference on Artificial Intelligence and Computer Applications (ICAICA), 314–319.

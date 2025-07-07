@@ -1,7 +1,6 @@
 # 📝 Publications
-<!--
-➤ ​**Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging. *Optics and Lasers in Engineering*.
--->
+
+➤ ​**Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). [Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging](https://doi.org/10.1016/j.optlaseng.2025.109198). *Optics and Lasers in Engineering*, 194, 109198.
 
 ➤ ​**Wu, X.**, Wang, L., & Huang, J. (2025). [AnimalRTPose: Faster cross-species real-time animal pose estimation](https://doi.org/10.1016/j.neunet.2025.107685). *Neural Networks*, 190, 107685.
 

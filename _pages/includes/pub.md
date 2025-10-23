@@ -1,5 +1,7 @@
 # 📝 Publications
 
+➤ ​**Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). *Engineering Applications of Artificial Intelligence*, 163, 112749.
+
 ➤ ​**Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., Song, L., & Han, S. (2025). [Image-free cross-species pose estimation via ultra-low sampling rate single-pixel camera](https://opg.optica.org/col/abstract.cfm?uri=col-23-9-091101). *Chinese Optics Letters*, 23(9), 091101.
 
 ➤ ​**Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). [Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging](https://doi.org/10.1016/j.optlaseng.2025.109198). *Optics and Lasers in Engineering*, 194, 109198.

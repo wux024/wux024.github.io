@@ -18,6 +18,8 @@
 
 ➤ ​**Wu, X.**, Wei, Z., Hu, Y., & Wang, L. (2020). [Traffic sign detection method using multi-color space fusion](https://doi.org/10.1109/ICAICA50127.2020.9182603). *2020 IEEE International Conference on Artificial Intelligence and Computer Applications (ICAICA)*, 314–319. 
 
+➤ Liu, Y., **Wu, X.**, Zhou, C., Yao, D., Zhang, Q., Huang, J., Meng, Y., & Song, L. (2026). [Image-free three-dimensional human pose estimation based on single-pixel imaging with extremely low sampling rate](https://doi.org/10.1016/j.optlaseng.2026.109715). *Optics and Lasers in Engineering*, 201, 109715.
+
 ➤ He, Y., ​**Wu, X.**, & Huang, J. (2025). [Dual-mode NIR spectroscopy integrating characteristic wavelengths and broadband spectra for non-invasive glucose measurement](https://doi.org/10.1016/j.infrared.2025.106126). *Infrared Physics & Technology*, 151, 106126.   
 
 ➤ Wang, Y., ​**Wu, X.**, Liu, X., Chu, F., Liu, H., & Han, Z. (2025). [Label smoothing regularization-based no hyperparameter domain generalization](https://doi.org/10.1016/j.knosys.2024.112877). *Knowledge-Based Systems*, 309, 112877.  

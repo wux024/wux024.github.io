@@ -1,16 +1,6 @@
 <span class='anchor' id='publications'></span>
 
-# Selected Publications
-
-➤ ​**Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). *Engineering Applications of Artificial Intelligence*, 163, 112749.
-
-➤ ​**Wu, X.**, Wang, L., & Huang, J. (2025). [AnimalRTPose: Faster cross-species real-time animal pose estimation](https://doi.org/10.1016/j.neunet.2025.107685). *Neural Networks*, 190, 107685.
-
-➤ ​**Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). [Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging](https://doi.org/10.1016/j.optlaseng.2025.109198). *Optics and Lasers in Engineering*, 194, 109198.
-
-➤ ​**Wu, X.**, Zhang, L., Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). *IEEE Journal of Oceanic Engineering*, 49(4), 1220–1232.  
-
-# Full Publications
+# Publications
 
 ### 2026
 

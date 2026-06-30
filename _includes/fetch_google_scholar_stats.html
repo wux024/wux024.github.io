@@ -11,9 +11,13 @@
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var publication = data && data['publications'] && data['publications'][paperId]
+                if (publication && publication['num_citations'] !== undefined) {
+                    element.innerHTML = '| Citations: ' + publication['num_citations'];
+                }
             });
+        }).fail(function () {
+            console.warn('Unable to load Google Scholar citation statistics.');
         });
     })
 </script>

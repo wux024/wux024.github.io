@@ -1,4 +1,4 @@
-# 🎖 Honors and Awards
+# Honors and Awards
 
 ✧ *2022/06* Northeast Normal University ​**Outstanding M.S. Graduate**  
 ✧ *2021/11* Northeast Normal University ​**Outstanding M.S. Graduate**  

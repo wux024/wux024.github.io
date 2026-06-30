@@ -2,7 +2,6 @@
 
 # Research Interests
 
-- Animal pose estimation and cross-species visual perception
-- Optoelectronic information processing and computational imaging
-- Single-pixel imaging and ultra-low-sampling perception
-- Underwater image enhancement and robotic fish perception systems
+- Cross-species pose estimation and applications
+- Underwater visual perception
+- Edge intelligence

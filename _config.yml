@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xin Wu (吴鑫)"
-description              : "Ph.D. candidate at Northeast Normal University, working on optoelectronic information processing, intelligent perception, and animal pose estimation."
+description              : "Ph.D. graduate from Northeast Normal University, working on optoelectronic information processing, intelligent perception, and animal pose estimation."
 repository               : "wux024/wux024.github.io"
 # google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ repository               : "wux024/wux024.github.io"
 author:
   name             : "Xin Wu (吴鑫)"
   avatar           : "images/android-chrome-192x192.png"
-  bio              : "Intelligent Perception and Optoelectronic Information Processing Group"
+  bio              : "Optoelectronic Information Processing & Intelligent Perception"
   location         : "Changchun, China"
   employer         :
   pubmed           : 

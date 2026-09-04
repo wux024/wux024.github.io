@@ -107,3 +107,74 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* Publication badges */
+.pub-badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.pub-first {
+    background-color: #224b8d;
+    color: #fff;
+}
+
+.pub-journal {
+    color: #224b8d;
+    font-weight: 600;
+}
+
+.pub-link {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: $dark-gray;
+    &:hover {
+        background-color: $lighter-gray;
+        color: #000;
+        border-color: $gray;
+    }
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(34, 75, 141, 0.8);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, background-color 0.3s;
+    z-index: 999;
+    &:hover {
+        background-color: rgba(34, 75, 141, 1);
+    }
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    @include breakpoint($small) {
+        bottom: 1em;
+        right: 1em;
+    }
+}

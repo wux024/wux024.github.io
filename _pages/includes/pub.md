@@ -4,7 +4,7 @@
 
 ### 2026
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 163, 112749.
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 163, 112749. <a href="https://github.com/wux024/mmpose/tree/main/configs/animal_2d_keypoint/animalvitpose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ Liu, Y., **Wu, X.**, Zhou, C., Yao, D., Zhang, Q., Huang, J., Meng, Y., & Song, L. (2026). [Image-free three-dimensional human pose estimation based on single-pixel imaging with extremely low sampling rate](https://doi.org/10.1016/j.optlaseng.2026.109715). <span class="pub-journal">Optics and Lasers in Engineering</span>, 201, 109715.
 
@@ -12,11 +12,11 @@
 
 ### 2025
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, L., & Huang, J. (2025). [AnimalRTPose: Faster cross-species real-time animal pose estimation](https://doi.org/10.1016/j.neunet.2025.107685). <span class="pub-journal">Neural Networks</span>, 190, 107685. <a href="https://github.com/wux024/AnimalRTPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, L., & Huang, J. (2025). [AnimalRTPose: Faster cross-species real-time animal pose estimation](https://doi.org/10.1016/j.neunet.2025.107685). <span class="pub-journal">Neural Networks</span>, 190, 107685. <a href="https://github.com/wux024/ultralytics/tree/animalrtpose/configs" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). [Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging](https://doi.org/10.1016/j.optlaseng.2025.109198). <span class="pub-journal">Optics and Lasers in Engineering</span>, 194, 109198.
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., Song, L., & Han, S. (2025). [Image-free cross-species pose estimation via ultra-low sampling rate single-pixel camera](https://opg.optica.org/col/abstract.cfm?uri=col-23-9-091101). <span class="pub-journal">Chinese Optics Letters</span>, 23(9), 091101.
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., Song, L., & Han, S. (2025). [Image-free cross-species pose estimation via ultra-low sampling rate single-pixel camera](https://opg.optica.org/col/abstract.cfm?uri=col-23-9-091101). <span class="pub-journal">Chinese Optics Letters</span>, 23(9), 091101. <a href="https://github.com/wux024/SPCPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ He, Y., **Wu, X.**, & Huang, J. (2025). [Dual-mode NIR spectroscopy integrating characteristic wavelengths and broadband spectra for non-invasive glucose measurement](https://doi.org/10.1016/j.infrared.2025.106126). <span class="pub-journal">Infrared Physics & Technology</span>, 151, 106126.   
 
@@ -28,7 +28,7 @@
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhang, L., Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). <span class="pub-journal">IEEE Journal of Oceanic Engineering</span>, 49(4), 1220–1232.  
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). <span class="pub-journal">IEEE Sensors Journal</span>, 24(8), 13293–13303.  
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). <span class="pub-journal">IEEE Sensors Journal</span>, 24(8), 13293–13303. <a href="https://github.com/wux024/AdamPosePlug" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/10.1016/j.infrared.2024.105246). <span class="pub-journal">Infrared Physics & Technology</span>, 138, 105246.  
 
@@ -40,7 +40,7 @@
 
 ### 2022
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Chen, L., Zhang, L., & Wang, L. (2022). [Motion parameters measurement of user-defined key points using 3D pose estimation](https://doi.org/10.1016/j.engappai.2022.104667). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 110, 104667.  
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Chen, L., Zhang, L., & Wang, L. (2022). [Motion parameters measurement of user-defined key points using 3D pose estimation](https://doi.org/10.1016/j.engappai.2022.104667). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 110, 104667. <a href="https://github.com/wux024/AdamPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a> <a href="https://github.com/wux024/AdamPosePlug" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ### 2020
 

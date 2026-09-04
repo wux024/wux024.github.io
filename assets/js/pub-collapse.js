@@ -1,5 +1,5 @@
 $(function () {
-  var $pubSection = $("#publications").parent();
+  var $pubSection = $("h1#publications").parent();
   if (!$pubSection.length) return;
 
   var $h3s = $pubSection.find("h3");

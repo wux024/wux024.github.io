@@ -24,7 +24,7 @@ $(function () {
     $h3.replaceWith(
       '<div class="pub-year-group">' +
         '<div class="pub-year-header">' +
-        "<span>" + yearText + "</span>" +
+        "<span>" + yearText + ' <span class="pub-year-count">· ' + entries.length + "</span></span>" +
         '<i class="fas fa-chevron-down pub-year-arrow" style="transform: rotate(' + arrowDeg + 'deg);"></i>' +
         "</div>" +
         '<div class="pub-year-content ' + collapsed + '"></div>' +

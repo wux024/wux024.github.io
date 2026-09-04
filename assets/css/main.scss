@@ -202,11 +202,7 @@ h1:before, .anchor:before {
 
 .pub-year-arrow {
     font-size: 0.8em;
-    transition: transform 0.3s;
-}
-
-.pub-year-header:hover .pub-year-arrow {
-    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 .pub-year-content {

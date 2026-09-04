@@ -2,7 +2,11 @@
 
 # Publications
 
-### 2026
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2026</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content">
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 163, 112749. <a href="https://github.com/wux024/mmpose/tree/main/configs/animal_2d_keypoint/animalvitpose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
@@ -10,7 +14,14 @@
 
 ➤ Li, J., Gao, Y., Yan, Y., Li, Z., **Wu, X.**, & Huang, J. (2026). [Vision-tactile sensor fusion system for fabric sorting and robotic grasping in textile recycling](https://doi.org/10.1109/JSEN.2026.3656234). <span class="pub-journal">IEEE Sensors Journal</span>, 26(5), 7645-7658.
 
-### 2025
+</div>
+</div>
+
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2025</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content collapsed">
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, L., & Huang, J. (2025). [AnimalRTPose: Faster cross-species real-time animal pose estimation](https://doi.org/10.1016/j.neunet.2025.107685). <span class="pub-journal">Neural Networks</span>, 190, 107685. <a href="https://github.com/wux024/ultralytics/tree/animalrtpose/configs" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
@@ -22,7 +33,14 @@
 
 ➤ Wang, Y., **Wu, X.**, Liu, X., Chu, F., Liu, H., & Han, Z. (2025). [Label smoothing regularization-based no hyperparameter domain generalization](https://doi.org/10.1016/j.knosys.2024.112877). <span class="pub-journal">Knowledge-Based Systems</span>, 309, 112877.  
 
-### 2024
+</div>
+</div>
+
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2024</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content collapsed">
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [LUO-V2 and MSPerception: A multi-fin co-drive robotic fish and its multi-sensor-based experimental system](https://doi.org/10.1016/j.oceaneng.2024.119273). <span class="pub-journal">Ocean Engineering</span>, 312, 119273.  
 
@@ -32,16 +50,40 @@
 
 ➤ Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/10.1016/j.infrared.2024.105246). <span class="pub-journal">Infrared Physics & Technology</span>, 138, 105246.  
 
-### 2023
+</div>
+</div>
+
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2023</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content collapsed">
 
 ➤ Feng, D., Zhou, C., Huang, J., Luo, G., & **Wu, X.** (2023). [Design and implementation of gesture recognition system based on flex sensors](https://doi.org/10.1109/JSEN.2023.3324503). <span class="pub-journal">IEEE Sensors Journal</span>, 23(24), 31389–31398.  
 
 ➤ Wang, L., **Wu, X.** (2023). [Method for 3D motion parameter measurement based on pose estimation](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). <span class="pub-journal">Journal of Jilin University (Engineering and Technology Edition)</span>, 53(7), 2099–2108.  
 
-### 2022
+</div>
+</div>
+
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2022</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content collapsed">
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Chen, L., Zhang, L., & Wang, L. (2022). [Motion parameters measurement of user-defined key points using 3D pose estimation](https://doi.org/10.1016/j.engappai.2022.104667). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 110, 104667. <a href="https://github.com/wux024/AdamPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a> <a href="https://github.com/wux024/AdamPosePlug" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
-### 2020
+</div>
+</div>
+
+<div class="pub-year-group">
+<div class="pub-year-header" onclick="this.parentElement.querySelector('.pub-year-content').classList.toggle('collapsed')">
+<span>2020</span> <i class="fas fa-chevron-down pub-year-arrow"></i>
+</div>
+<div class="pub-year-content collapsed">
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wei, Z., Hu, Y., & Wang, L. (2020). [Traffic sign detection method using multi-color space fusion](https://doi.org/10.1109/ICAICA50127.2020.9182603). <span class="pub-journal">2020 IEEE International Conference on Artificial Intelligence and Computer Applications (ICAICA)</span>, 314–319. 
+
+</div>
+</div>

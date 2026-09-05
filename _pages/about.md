@@ -11,7 +11,9 @@ redirect_from:
 <div class="hero-banner hero-day" id="heroBanner">
   <div class="hero-banner__overlay"></div>
   <div class="hero-banner__content">
-    <img src="{{ site.author.avatar | relative_url }}" class="hero-banner__avatar" alt="{{ site.author.name }}">
+    <div class="hero-banner__avatar-wrapper">
+      <img src="{{ site.author.avatar | relative_url }}" class="hero-banner__avatar" id="heroAvatar" alt="{{ site.author.name }}">
+    </div>
     <h1 class="hero-banner__title">Xin Wu (吴鑫)</h1>
     <p class="hero-banner__subtitle">
       <a href="https://oceaninfo.jmu.edu.cn/" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">School of Ocean Information Engineering</a>
@@ -41,6 +43,35 @@ redirect_from:
     hero.classList.add('hero-sunset');
     hero.classList.remove('hero-day');
   }
+})();
+
+/* Avatar click ripple + bounce effect */
+(function() {
+  var avatar = document.getElementById('heroAvatar');
+  if (!avatar) return;
+  var wrapper = avatar.parentElement;
+
+  avatar.addEventListener('click', function(e) {
+    // Bounce animation
+    avatar.classList.remove('clicked');
+    // Force reflow to restart animation
+    void avatar.offsetWidth;
+    avatar.classList.add('clicked');
+
+    // Ripple effect
+    var ripple = document.createElement('span');
+    ripple.className = 'hero-banner__avatar-ripple';
+    wrapper.appendChild(ripple);
+
+    setTimeout(function() {
+      ripple.remove();
+    }, 700);
+  });
+
+  // Remove bounce class after animation ends
+  avatar.addEventListener('animationend', function() {
+    avatar.classList.remove('clicked');
+  });
 })();
 </script>
 

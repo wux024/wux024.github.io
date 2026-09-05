@@ -57,8 +57,11 @@
         order: 2;
         img {
             max-width: 400px;
+            width: 100%;
+            height: auto;
             box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
+            object-fit: contain;
+            border-radius: 6px;
         }
     }
     
@@ -517,8 +520,20 @@ html.dark {
         border: 3px solid rgba(255, 255, 255, 0.6);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         margin-bottom: 0.8em;
-        object-fit: cover;
-        object-position: center top;
+        object-fit: contain;
+        object-position: center center;
+        background-color: rgba(255, 255, 255, 0.15);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
     }
 
     &__title {
@@ -580,6 +595,9 @@ html.dark {
         &__avatar {
             width: 140px;
             height: 140px;
+            object-fit: contain;
+            object-position: center center;
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
         &__title {
@@ -608,4 +626,315 @@ html.dark .hero-banner {
     &__overlay {
         background: linear-gradient(135deg, rgba(20, 30, 55, 0.7) 0%, rgba(15, 22, 40, 0.65) 50%, rgba(0, 0, 0, 0.55) 100%);
     }
+}
+
+/* Avatar click ripple effect */
+.hero-banner__avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+
+.hero-banner__avatar-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    animation: avatar-ripple 0.7s ease-out forwards;
+}
+
+@keyframes avatar-ripple {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Avatar float animation on click */
+.hero-banner__avatar.clicked {
+    animation: avatar-bounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes avatar-bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.15) rotate(-3deg); }
+    60% { transform: scale(0.95) rotate(2deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Dark mode: fix dark icons */
+html.dark {
+    /* Research interest / honors icons with inline color styles - boost brightness */
+    .page__content i.fas[style*="color"],
+    .page__content i.fab[style*="color"],
+    .honor-icon i[style*="color"] {
+        filter: brightness(1.35) saturate(1.15);
+    }
+
+    /* Paper box image shadow in dark mode */
+    .paper-box-image img {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Paper box bottom border */
+    .paper-box {
+        border-bottom-color: $dark-border;
+    }
+
+    /* Sidebar avatar border */
+    .sidebar .author__avatar img {
+        border-color: $dark-border;
+    }
+
+    /* Social icons in hero - ensure visibility */
+    .hero-banner__links a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Academicons in dark mode */
+    .ai {
+        color: inherit;
+    }
+
+    /* Default ul list icons - use dark mode color */
+    .page__content ul li:before {
+        color: $dark-link;
+        opacity: 0.9;
+    }
+}
+
+/* Enhanced list styling */
+.page__content ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.8em;
+        margin-bottom: 0.5em;
+
+        &:before {
+            content: "\f00c"; /* check icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0.1em;
+            color: $info-color;
+            font-size: 0.85em;
+            opacity: 0.85;
+        }
+    }
+}
+
+html.dark .page__content ul li:before {
+    color: $dark-link;
+    opacity: 0.9;
+}
+
+/* Keep custom icon lists (research interests, honors) from getting double icons */
+.page__content ul li i.fas,
+.page__content ul li i.fab {
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+}
+
+.page__content ul li:has(i.fas),
+.page__content ul li:has(i.fab) {
+    &:before {
+        display: none;
+    }
+}
+
+/* Education timeline */
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 1em 1.2em;
+    background-color: $lighter-gray;
+    border-radius: 10px;
+    border-left: 3px solid $info-color;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        transform: translateX(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+}
+
+html.dark .edu-item {
+    background-color: $dark-bg-alt;
+    border-left-color: $dark-link;
+
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.edu-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba($info-color, 0.12);
+    color: $info-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+html.dark .edu-icon {
+    background-color: rgba($dark-link, 0.15);
+    color: $dark-link;
+}
+
+.edu-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.edu-degree {
+    font-weight: 600;
+    font-size: 1.05em;
+    color: $dark-gray;
+    margin-bottom: 0.2em;
+}
+
+html.dark .edu-degree {
+    color: $dark-text-strong;
+}
+
+.edu-school {
+    font-size: 0.95em;
+    color: $gray;
+    margin-bottom: 0.3em;
+}
+
+html.dark .edu-school {
+    color: $dark-muted;
+}
+
+.edu-meta {
+    font-size: 0.85em;
+    color: $light-gray;
+}
+
+html.dark .edu-meta {
+    color: $dark-muted;
+    opacity: 0.8;
+}
+
+.edu-date {
+    font-weight: 500;
+}
+
+/* Honors list */
+.honor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-top: 0.5em;
+}
+
+.honor-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 0.8em 1em;
+    background-color: $lighter-gray;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        transform: translateX(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+}
+
+html.dark .honor-item {
+    background-color: $dark-bg-alt;
+
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.honor-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+html.dark .honor-icon {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.honor-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.honor-title {
+    font-weight: 600;
+    font-size: 0.95em;
+    color: $dark-gray;
+}
+
+html.dark .honor-title {
+    color: $dark-text-strong;
+}
+
+.honor-school {
+    font-size: 0.82em;
+    color: $gray;
+    margin-top: 2px;
+}
+
+html.dark .honor-school {
+    color: $dark-muted;
+}
+
+.honor-date {
+    flex-shrink: 0;
+    font-size: 0.82em;
+    color: $light-gray;
+    font-weight: 500;
+}
+
+html.dark .honor-date {
+    color: $dark-muted;
+}
+
+/* Badge dark mode enhancement */
+html.dark .badge {
+    background-color: #2f5fb3;
 }

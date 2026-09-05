@@ -2,6 +2,29 @@
 
 # Education
 
-✓ *2023.09 - 2026.06*, Ph.D., School of Physics, Northeast Normal University, Changchun.  
-✓ *2019.09 - 2022.06*, Master, School of Physics, Northeast Normal University, Changchun.  
-✓ *2015.09 - 2019.06*, Undergraduate, School of Physics, Northeast Normal University, Changchun.  
+<div class="edu-list">
+  <div class="edu-item">
+    <div class="edu-icon"><i class="fas fa-user-graduate"></i></div>
+    <div class="edu-content">
+      <div class="edu-degree">Ph.D.</div>
+      <div class="edu-school">School of Physics, Northeast Normal University</div>
+      <div class="edu-meta"><span class="edu-date">2023.09 - 2026.06</span> · <span class="edu-location">Changchun</span></div>
+    </div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-icon"><i class="fas fa-user-graduate"></i></div>
+    <div class="edu-content">
+      <div class="edu-degree">Master</div>
+      <div class="edu-school">School of Physics, Northeast Normal University</div>
+      <div class="edu-meta"><span class="edu-date">2019.09 - 2022.06</span> · <span class="edu-location">Changchun</span></div>
+    </div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+    <div class="edu-content">
+      <div class="edu-degree">Undergraduate</div>
+      <div class="edu-school">School of Physics, Northeast Normal University</div>
+      <div class="edu-meta"><span class="edu-date">2015.09 - 2019.06</span> · <span class="edu-location">Changchun</span></div>
+    </div>
+  </div>
+</div>

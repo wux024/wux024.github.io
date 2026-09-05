@@ -23,6 +23,14 @@
     @include suffix(0 of 12);
   }
 
+  .page--full & {
+    @include breakpoint($large) {
+      @include span(12 of 12);
+      @include prefix(0 of 12);
+      @include suffix(0 of 12);
+    }
+  }
+
   .page__inner-wrap {
     @include full();
 

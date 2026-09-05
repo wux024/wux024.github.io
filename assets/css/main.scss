@@ -471,7 +471,7 @@ html.dark {
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 360px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -494,7 +494,7 @@ html.dark {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(34, 75, 141, 0.65) 0%, rgba(20, 45, 90, 0.55) 50%, rgba(0, 0, 0, 0.4) 100%);
+        background: linear-gradient(135deg, rgba(34, 75, 141, 0.6) 0%, rgba(20, 45, 90, 0.5) 50%, rgba(0, 0, 0, 0.35) 100%);
     }
 
     &__content {
@@ -503,23 +503,35 @@ html.dark {
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         padding: 2.5em 3em;
         color: #fff;
+        text-align: center;
+    }
+
+    &__avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0.8em;
+        object-fit: cover;
     }
 
     &__title {
         font-size: 2.2em;
         font-weight: 700;
-        margin: 0 0 0.3em 0;
+        margin: 0 0 0.25em 0;
         letter-spacing: 0.5px;
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     &__subtitle {
-        font-size: 1.15em;
+        font-size: 1.1em;
         font-weight: 400;
-        margin: 0 0 0.8em 0;
+        margin: 0 0 0.4em 0;
         opacity: 0.92;
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
     }
@@ -529,7 +541,9 @@ html.dark {
         opacity: 0.8;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 0.5em;
+        margin-bottom: 0.6em;
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 
         i {
@@ -537,11 +551,34 @@ html.dark {
         }
     }
 
+    &__links {
+        display: flex;
+        gap: 1em;
+        margin-top: 0.5em;
+
+        a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.3em;
+            transition: color 0.2s, transform 0.2s;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+                transform: scale(1.15);
+            }
+        }
+    }
+
     @include breakpoint($small) {
-        height: 300px;
+        height: 420px;
 
         &__content {
             padding: 1.5em 1.5em;
+        }
+
+        &__avatar {
+            width: 90px;
+            height: 90px;
         }
 
         &__title {
@@ -554,20 +591,20 @@ html.dark {
     }
 
     @include breakpoint($large) {
-        height: 400px;
+        height: 440px;
 
         &__content {
             padding: 3em 4em;
         }
 
         &__title {
-            font-size: 2.6em;
+            font-size: 2.4em;
         }
     }
 }
 
 html.dark .hero-banner {
     &__overlay {
-        background: linear-gradient(135deg, rgba(20, 30, 55, 0.75) 0%, rgba(15, 22, 40, 0.7) 50%, rgba(0, 0, 0, 0.6) 100%);
+        background: linear-gradient(135deg, rgba(20, 30, 55, 0.7) 0%, rgba(15, 22, 40, 0.65) 50%, rgba(0, 0, 0, 0.55) 100%);
     }
 }

@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xin Wu (吴鑫)"
-description              : "Ph.D. graduate from Northeast Normal University, working on optoelectronic information processing, intelligent perception, and animal pose estimation."
+description              : "School of Ocean Information Engineering, Jimei University, working on optoelectronic information processing, intelligent perception, and animal pose estimation."
 repository               : "wux024/wux024.github.io"
 # google_scholar_stats_use_cdn : true
 
@@ -22,10 +22,10 @@ repository               : "wux024/wux024.github.io"
 # Site Author
 author:
   name             : "Xin Wu (吴鑫)"
-  avatar           : "images/android-chrome-192x192.png"
-  bio              : "Optoelectronic Information Processing & Intelligent Perception"
-  location         : "Changchun, China"
-  employer         :
+  avatar           : "images/avatar.jpg"
+  bio              : "School of Ocean Information Engineering"
+  location         : "Xiamen, China"
+  employer         : "Jimei University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=8GiHdmQAAAAJ"
   email            : "wux024@nenu.edu.cn"

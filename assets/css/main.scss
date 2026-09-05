@@ -514,14 +514,14 @@ html.dark {
     }
 
     &__avatar {
-        width: 260px;
-        height: 260px;
-        border-radius: 16px;
+        width: 220px;
+        height: 280px;
+        border-radius: 50%;
         border: 3px solid rgba(255, 255, 255, 0.6);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         margin-bottom: 0.8em;
-        object-fit: contain;
-        object-position: center center;
+        object-fit: cover;
+        object-position: center top;
         background-color: rgba(255, 255, 255, 0.15);
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -593,10 +593,10 @@ html.dark {
         }
 
         &__avatar {
-            width: 140px;
-            height: 140px;
-            object-fit: contain;
-            object-position: center center;
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center top;
             background-color: rgba(255, 255, 255, 0.15);
         }
 
@@ -639,10 +639,10 @@ html.dark .hero-banner {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
+    width: 120px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -60px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.7);
     opacity: 0;

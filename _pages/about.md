@@ -24,7 +24,7 @@ redirect_from:
     </p>
     <div class="hero-banner__links">
       {% if site.author.email %}<a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-fw fa-envelope"></i></a>{% endif %}
-      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" title="Google Scholar"><i class="fas fa-fw fa-graduation-cap"></i></a>{% endif %}
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" title="Google Scholar"><i class="ai ai-fw ai-google-scholar"></i></a>{% endif %}
       {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" title="GitHub"><i class="fab fa-fw fa-github"></i></a>{% endif %}
       {% if site.author.orcid %}<a href="{{ site.author.orcid }}" title="ORCID"><i class="ai ai-fw ai-orcid"></i></a>{% endif %}
     </div>

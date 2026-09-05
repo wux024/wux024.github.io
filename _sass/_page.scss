@@ -15,37 +15,10 @@
     max-width: $x-large;
   }
 
-  // Homepage: full width hero, but content keeps padding
+  // Homepage: normal layout
   &.homepage {
-    padding-left: 0;
-    padding-right: 0;
     margin-top: 0;
-    max-width: none;
-
-    .page {
-      @include breakpoint($large) {
-        width: 100%;
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
   }
-}
-
-.homepage .page__content {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
-.homepage .hero-banner {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
 }
 
 .page {

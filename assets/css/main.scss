@@ -481,11 +481,11 @@ html.dark {
     transition: background-image 0.6s ease-in-out;
 
     &.hero-day {
-        background-image: url('../images/jmu-lake.jpg');
+        background-image: url('../../images/jmu-lake.jpg');
     }
 
     &.hero-sunset {
-        background-image: url('../images/jmu-sunset.jpg');
+        background-image: url('../../images/jmu-sunset.jpg');
     }
 
     &__overlay {

@@ -14,7 +14,7 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <div id="main" role="main"{% if page.url == "/" %} class="homepage"{% endif %}>
       {% unless page.url == "/" %}
         {% include sidebar.html %}
       {% endunless %}

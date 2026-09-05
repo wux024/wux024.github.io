@@ -14,6 +14,14 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+
+  // Homepage: full width, no padding
+  &.homepage {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    max-width: none;
+  }
 }
 
 .page {
@@ -23,7 +31,8 @@
     @include suffix(0 of 12);
   }
 
-  .page--full & {
+  // Homepage: full width
+  .homepage & {
     @include breakpoint($large) {
       @include span(12 of 12);
       @include prefix(0 of 12);

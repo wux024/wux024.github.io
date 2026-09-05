@@ -475,23 +475,56 @@ html.dark {
     position: relative;
     width: 100%;
     aspect-ratio: 3 / 2;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 2em;
     margin-top: 1em;
-    transition: background-image 0.6s ease-in-out;
+    background-color: #1a1c21;
+
+    /* Blurred background fill layer (bottom) */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: blur(20px) brightness(0.65);
+        transform: scale(1.1);
+        z-index: 0;
+        transition: background-image 0.6s ease-in-out;
+    }
+
+    /* Sharp full image layer (middle) */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        transition: background-image 0.6s ease-in-out;
+    }
 
     &.hero-day {
-        background-image: url('/images/jmu-lake.jpg');
-        background-position: center center;
+        &::before,
+        &::after {
+            background-image: url('/images/jmu-lake.jpg');
+        }
     }
 
     &.hero-sunset {
-        background-image: url('/images/jmu-sunset.jpg');
-        background-position: center center;
+        &::before,
+        &::after {
+            background-image: url('/images/jmu-sunset.jpg');
+        }
     }
 
     &__overlay {
@@ -501,6 +534,7 @@ html.dark {
         width: 100%;
         height: 100%;
         background: linear-gradient(135deg, rgba(34, 75, 141, 0.6) 0%, rgba(20, 45, 90, 0.5) 50%, rgba(0, 0, 0, 0.35) 100%);
+        z-index: 2;
     }
 
     &__content {

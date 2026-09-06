@@ -16,7 +16,7 @@ redirect_from:
     </div>
     <h1 class="hero-banner__title">Xin Wu (吴鑫)</h1>
     <p class="hero-banner__subtitle">
-      <a href="https://oceaninfo.jmu.edu.cn/" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">School of Ocean Information Engineering</a>
+      <a href="https://ie.jmu.edu.cn/" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">School of Ocean Information Engineering</a>
     </p>
     <p class="hero-banner__affiliation">
       <i class="fas fa-university" aria-hidden="true"></i>

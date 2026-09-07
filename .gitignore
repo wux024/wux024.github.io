@@ -1,4 +1,5 @@
 _site/
 push.sh
 .DS_Store
+.idea/
 /github_myprofile_updater/README.md

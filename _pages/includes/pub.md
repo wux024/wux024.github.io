@@ -36,7 +36,7 @@
 
 ➤ Feng, D., Zhou, C., Huang, J., Luo, G., & **Wu, X.** (2023). [Design and implementation of gesture recognition system based on flex sensors](https://doi.org/10.1109/JSEN.2023.3324503). <span class="pub-journal">IEEE Sensors Journal</span>, 23(24), 31389–31398.
 
-➤ Wang, L., **Wu, X.** (2023). [Method for 3D motion parameter measurement based on pose estimation](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). <span class="pub-journal">Journal of Jilin University (Engineering and Technology Edition)</span>, 53(7), 2099–2108.
+➤ 王连明, **吴鑫** (2023). [基于姿态估计的物体3D运动参数测量方法](http://jlgy.publish.founderss.cn/thesisDetails#10.13229/j.cnki.jdxbgxb.20210981&lang=zh). <span class="pub-journal">吉林大学学报（工学版）</span>, 53(7), 2099–2108.
 
 ### 2022
 

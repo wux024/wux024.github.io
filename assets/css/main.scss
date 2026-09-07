@@ -654,7 +654,7 @@ body {
 .hero-banner {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 3.2em);
+    min-height: 68vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -666,7 +666,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 3em 1.5em;
+        padding: 2em 1.5em;
         color: #fff;
         text-align: center;
     }

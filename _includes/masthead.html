@@ -4,7 +4,7 @@
       <nav id="site-nav" class="greedy-nav">
         <button aria-label="Toggle navigation"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me"><span lang="en">Homepage</span><span lang="zh">主页</span></a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#top"><span lang="en">Homepage</span><span lang="zh">主页</span></a></li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"><span lang="en">{{ link.title_en }}</span><span lang="zh">{{ link.title_zh }}</span></a></li>
           {% endfor %}

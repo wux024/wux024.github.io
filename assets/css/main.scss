@@ -762,8 +762,10 @@ body {
     }
 
     @include breakpoint(max-width $small) {
+        min-height: 52vh;
+
         &__content {
-            padding: 2em 1.2em;
+            padding: 1.5em 1.2em;
         }
 
         &__avatar {

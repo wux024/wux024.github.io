@@ -515,6 +515,57 @@ html.dark {
     .sidebar {
         animation: none;
     }
+
+    .hero-banner__avatar.clicked,
+    .hero-banner__avatar-ripple {
+        animation: none;
+    }
+}
+
+/* 404 page */
+.not-found {
+    text-align: center;
+    padding: 6em 1em 4em;
+
+    &__code {
+        font-size: 6em;
+        font-weight: 700;
+        color: $light-gray;
+        line-height: 1;
+        margin-bottom: 0.3em;
+    }
+
+    &__text {
+        color: $gray;
+        margin-bottom: 0.5em;
+    }
+
+    &__home {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.5em 1.5em;
+        border-radius: 999px;
+        background-color: $info-color;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: mix(#000, $info-color, 15%);
+            color: #fff;
+        }
+    }
+}
+
+html.dark .not-found {
+    &__code {
+        color: $dark-border;
+    }
+
+    &__text {
+        color: $dark-muted;
+    }
 }
 
 /* Author avatar hover */

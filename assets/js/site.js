@@ -144,6 +144,24 @@
     });
   }
 
+  /* ===== External links open in new tab ===== */
+  function initExternalLinks() {
+    Array.prototype.forEach.call(document.querySelectorAll("a[href]"), function (a) {
+      var href = a.getAttribute("href");
+      if (!href || href.charAt(0) === "#" || href.indexOf("mailto:") === 0) return;
+      var url;
+      try {
+        url = new URL(a.href, window.location.href);
+      } catch (e) {
+        return;
+      }
+      if (url.host !== window.location.host) {
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  }
+
   /* ===== Init ===== */
   function ready(fn) {
     if (document.readyState !== "loading") {
@@ -158,5 +176,6 @@
     initBackToTop();
     initPubCollapse();
     initDarkMode();
+    initExternalLinks();
   });
 })();

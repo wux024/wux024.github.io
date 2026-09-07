@@ -658,12 +658,16 @@ html.dark {
     @include breakpoint(max-width $small) {
         aspect-ratio: auto;
 
+        &::after {
+            background-size: cover;
+        }
+
         &__content {
             padding: 1.8em 1.2em;
         }
 
         &__avatar {
-            width: 104px;
+            width: 27vw;
             margin-bottom: 0.6em;
         }
 

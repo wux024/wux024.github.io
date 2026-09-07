@@ -567,8 +567,8 @@ html.dark {
     margin-top: 1em;
     background-color: #1a1c21;
 
-    /* Blurred background fill layer (bottom) */
-    &::before {
+    /* Background image layer, always fills the panel */
+    &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -578,39 +578,15 @@ html.dark {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        filter: blur(20px) brightness(0.65);
-        transform: scale(1.1);
-        z-index: 0;
-        transition: background-image 0.6s ease-in-out;
-    }
-
-    /* Sharp full image layer (middle) */
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         z-index: 1;
-        transition: background-image 0.6s ease-in-out;
     }
 
-    &.hero-day {
-        &::before,
-        &::after {
-            background-image: url('/images/jmu-lake.jpg');
-        }
+    &.hero-day::after {
+        background-image: url('/images/jmu-lake.jpg');
     }
 
-    &.hero-sunset {
-        &::before,
-        &::after {
-            background-image: url('/images/jmu-sunset.jpg');
-        }
+    &.hero-sunset::after {
+        background-image: url('/images/jmu-sunset.jpg');
     }
 
     &__overlay {
@@ -743,10 +719,6 @@ html.dark {
 
     @include breakpoint(max-width $small) {
         aspect-ratio: auto;
-
-        &::after {
-            background-size: cover;
-        }
 
         &__content {
             padding: 1.8em 1.2em;

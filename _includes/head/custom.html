@@ -11,13 +11,15 @@
     var hour = new Date().getHours();
     var isNight = hour < 7 || hour >= 18;
 
-    /* Theme: manual choice wins; otherwise auto-dark at night, system preference by day */
+    /* Theme: manual choice wins but only within its day/night period; otherwise auto */
     var m = null;
     try { m = localStorage.getItem('dark-mode'); } catch (e) {}
+    var period = isNight ? 'night' : 'day';
+    var manual = (m && m.indexOf(period + ':') === 0) ? m.slice(period.length + 1) : null;
     var dark;
-    if (m === '1') {
+    if (manual === '1') {
       dark = true;
-    } else if (m === '0') {
+    } else if (manual === '0') {
       dark = false;
     } else {
       dark = isNight || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);

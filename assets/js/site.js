@@ -135,9 +135,11 @@
     btn.addEventListener("click", function () {
       document.documentElement.classList.toggle("dark");
       try {
+        var h = new Date().getHours();
+        var period = h < 7 || h >= 18 ? "night" : "day";
         localStorage.setItem(
           "dark-mode",
-          document.documentElement.classList.contains("dark") ? "1" : "0"
+          period + ":" + (document.documentElement.classList.contains("dark") ? "1" : "0")
         );
       } catch (e) {}
       syncIcon();

@@ -13,6 +13,10 @@
     if (m === '1' || (m === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
     }
+    var l = 'en';
+    try { l = localStorage.getItem('lang') || 'en'; } catch (e) {}
+    document.documentElement.classList.remove('lang-en', 'lang-zh');
+    document.documentElement.classList.add(l === 'zh' ? 'lang-zh' : 'lang-en');
   })();
 </script>
 

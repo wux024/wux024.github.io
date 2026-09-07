@@ -1,13 +1,17 @@
 # main links links
 main:
-  - title: "About"
+  - title_en: "About"
+    title_zh: "简介"
     url: "/#about-me"
 
-  - title: "Research"
+  - title_en: "Research"
+    title_zh: "研究方向"
     url: "/#research"
 
-  - title: "Education"
+  - title_en: "Education"
+    title_zh: "教育经历"
     url: "/#education"
 
-  - title: "Publications"
+  - title_en: "Publications"
+    title_zh: "学术成果"
     url: "/#publications"

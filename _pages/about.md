@@ -14,13 +14,13 @@ redirect_from:
     <div class="hero-banner__avatar-wrapper">
       <img src="{{ site.author.avatar | relative_url }}" class="hero-banner__avatar" id="heroAvatar" alt="{{ site.author.name }}">
     </div>
-    <h1 class="hero-banner__title">Xin Wu (吴鑫)</h1>
+    <h1 class="hero-banner__title"><span lang="en">Xin Wu (吴鑫)</span><span lang="zh">吴鑫</span></h1>
     <p class="hero-banner__subtitle">
-      <a href="https://ie.jmu.edu.cn/" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">School of Ocean Information Engineering</a>
+      <a href="https://ie.jmu.edu.cn/" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);"><span lang="en">School of Ocean Information Engineering</span><span lang="zh">海洋信息工程学院</span></a>
     </p>
     <p class="hero-banner__affiliation">
       <i class="fas fa-university" aria-hidden="true"></i>
-      <a href="https://www.jmu.edu.cn/" style="color: #fff; text-decoration: none;">Jimei University</a> · Xiamen, China
+      <a href="https://www.jmu.edu.cn/" style="color: #fff; text-decoration: none;"><span lang="en">Jimei University</span><span lang="zh">集美大学</span></a> · <span lang="en">Xiamen, China</span><span lang="zh">中国厦门</span>
     </p>
     <div class="hero-banner__links">
       {% if site.author.email %}<a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-fw fa-envelope"></i></a>{% endif %}

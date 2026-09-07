@@ -265,6 +265,54 @@ $dark-muted: #9aa0a8;
 $dark-link: #7aa7e8;
 $dark-border: #34383f;
 
+/* Language switcher */
+html.lang-en [lang="zh"] {
+    display: none;
+}
+
+html.lang-zh [lang="en"] {
+    display: none;
+}
+
+#lang-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
+    height: auto;
+    padding: 3px 10px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    background: transparent;
+    color: $masthead-link-color;
+    font-size: $type-size-6;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: $global-transition;
+    z-index: 11;
+
+    &:hover {
+        color: $masthead-link-color-hover;
+        border-color: $primary-color;
+    }
+}
+
+.masthead__inner-wrap {
+    position: relative;
+    padding-right: 4.5em;
+}
+
+html.dark #lang-toggle {
+    color: $dark-muted;
+    border-color: $dark-border;
+
+    &:hover {
+        color: $dark-text-strong;
+        border-color: $dark-muted;
+    }
+}
+
 html.dark {
     body {
         background-color: $dark-bg;

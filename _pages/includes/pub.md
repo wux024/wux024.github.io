@@ -1,6 +1,10 @@
 <span class='anchor' id='publications'></span>
 
 # Publications
+{: lang="en"}
+
+# 出版物
+{: lang="zh"}
 
 ### 2026
 

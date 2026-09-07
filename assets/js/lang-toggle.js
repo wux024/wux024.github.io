@@ -7,8 +7,6 @@
     html.classList.remove("lang-en", "lang-zh");
     html.classList.add(lang === "zh" ? "lang-zh" : "lang-en");
     html.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
-    var btn = document.getElementById("lang-toggle");
-    if (btn) btn.textContent = lang === "zh" ? "EN" : "中文";
     /* Let greedy navigation recalculate for the new label widths */
     window.dispatchEvent(new Event("resize"));
   }

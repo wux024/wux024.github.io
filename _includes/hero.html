@@ -21,19 +21,6 @@
 </div>
 
 <script>
-(function() {
-  var hour = new Date().getHours();
-  var bg = document.getElementById('page-bg');
-  if (!bg) return;
-  if (hour >= 6 && hour < 17) {
-    bg.classList.add('hero-day');
-    bg.classList.remove('hero-sunset');
-  } else {
-    bg.classList.add('hero-sunset');
-    bg.classList.remove('hero-day');
-  }
-})();
-
 /* Avatar click ripple + bounce effect */
 (function() {
   var avatar = document.getElementById('heroAvatar');

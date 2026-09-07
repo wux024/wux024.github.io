@@ -619,13 +619,7 @@ html.dark .not-found {
     background-repeat: no-repeat;
     z-index: -2;
 
-    &.hero-day {
-        background-image: url('/images/jmu-lake.jpg');
-    }
-
-    &.hero-sunset {
-        background-image: url('/images/jmu-sunset.jpg');
-    }
+    background-image: var(--daily-bg, url('/images/jmu-sunset.jpg'));
 
     &::after {
         content: "";
@@ -639,8 +633,6 @@ html.dark .not-found {
 }
 
 html.dark #page-bg {
-    background-image: url('/images/jmu-sunset.jpg');
-
     &::after {
         background: linear-gradient(180deg, rgba(10, 15, 30, 0.55) 0%, rgba(10, 15, 30, 0.65) 50%, rgba(0, 0, 0, 0.75) 100%);
     }

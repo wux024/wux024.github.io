@@ -8,23 +8,42 @@
 
 <script>
   (function () {
+    var hour = new Date().getHours();
+    var isNight = hour < 7 || hour >= 18;
+
+    /* Theme: manual choice wins; otherwise auto-dark at night, system preference by day */
     var m = null;
     try { m = localStorage.getItem('dark-mode'); } catch (e) {}
-    if (m === '1' || (m === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
+    var dark;
+    if (m === '1') {
+      dark = true;
+    } else if (m === '0') {
+      dark = false;
+    } else {
+      dark = isNight || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
     }
+    if (dark) document.documentElement.classList.add('dark');
+
     var l = 'en';
     try { l = localStorage.getItem('lang') || 'en'; } catch (e) {}
     document.documentElement.classList.remove('lang-en', 'lang-zh');
     document.documentElement.classList.add(l === 'zh' ? 'lang-zh' : 'lang-en');
 
-    /* Preload the hero background matching current day/night */
-    var hour = new Date().getHours();
-    var hero = (hour >= 6 && hour < 17) ? 'jmu-lake.jpg' : 'jmu-sunset.jpg';
+    /* Hero background: daily pool 7:00-18:00, fixed sunset otherwise (independent of theme) */
+    var pool = [
+      {%- for f in site.static_files -%}
+      {%- if f.path contains "/images/bg/" -%}'{{ f.path | relative_url }}',{%- endif -%}
+      {%- endfor -%}
+    ];
+    var hero = 'images/jmu-sunset.jpg';
+    if (!isNight && pool.length) {
+      hero = pool[Math.floor(Date.now() / 86400000) % pool.length];
+      document.documentElement.style.setProperty('--daily-bg', "url('" + hero + "')");
+    }
     var link = document.createElement('link');
     link.rel = 'preload';
     link.as = 'image';
-    link.href = 'images/' + hero;
+    link.href = hero;
     document.head.appendChild(link);
   })();
 </script>

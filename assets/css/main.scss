@@ -793,10 +793,12 @@ html.dark .not-found {
         }
 
         &__links {
-            gap: 0.8em;
+            gap: 0.6em;
 
             a {
-                font-size: 1.15em;
+                width: 36px;
+                height: 36px;
+                font-size: 1.05em;
             }
         }
     }

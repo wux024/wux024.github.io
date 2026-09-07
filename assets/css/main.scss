@@ -279,30 +279,28 @@ html.lang-zh [lang="en"] {
     top: 50%;
     right: 0.5em;
     transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    border: 1px solid $border-color;
+    display: inline-flex;
+    align-items: stretch;
+    padding: 3px;
+    border: none;
     border-radius: 999px;
-    background: $lighter-gray;
+    background: rgba(122, 130, 136, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(122, 130, 136, 0.18);
     cursor: pointer;
     z-index: 11;
     user-select: none;
-    transition: $global-transition;
-
-    &:hover {
-        border-color: $primary-color;
-    }
 
     .lang-option {
         position: relative;
         z-index: 1;
-        width: 2.6em;
-        padding: 2px 0;
-        text-align: center;
-        font-size: $type-size-7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 24px;
+        font-size: 12px;
         font-weight: 600;
-        line-height: 1.5;
+        letter-spacing: 0.02em;
         color: $gray;
         border-radius: 999px;
         transition: color 0.25s ease;
@@ -310,14 +308,14 @@ html.lang-zh [lang="en"] {
 
     .lang-indicator {
         position: absolute;
-        top: 2px;
-        bottom: 2px;
-        left: 2px;
-        width: 2.6em;
+        top: 3px;
+        left: 3px;
+        width: 46px;
+        height: 24px;
         border-radius: 999px;
         background: #fff;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
-        transition: transform 0.25s ease;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -332,30 +330,26 @@ html.lang-zh #lang-toggle .lang-option-zh {
 
 .masthead__inner-wrap {
     position: relative;
-    padding-right: 6.5em;
+    padding-right: 7.5em;
 }
 
 html.dark #lang-toggle {
-    background: $dark-bg-alt;
-    border-color: $dark-border;
-
-    &:hover {
-        border-color: $dark-muted;
-    }
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 
     .lang-option {
         color: $dark-muted;
     }
 
     .lang-indicator {
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        background: #3a3f47;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     }
 }
 
 html.dark.lang-en #lang-toggle .lang-option-en,
 html.dark.lang-zh #lang-toggle .lang-option-zh {
-    color: $dark-link;
+    color: $dark-text-strong;
 }
 
 html.dark {

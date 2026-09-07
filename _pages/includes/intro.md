@@ -1,3 +1,11 @@
+<span class='anchor' id='introduction'></span>
+
+# Introduction
+{: lang="en"}
+
+# 个人简介
+{: lang="zh"}
+
 I am currently with the [School of Ocean Information Engineering](https://ie.jmu.edu.cn/), [Jimei University](https://www.jmu.edu.cn/), located in the beautiful coastal city of Xiamen. My research focuses on optoelectronic information processing, intelligent perception, and animal pose estimation, with particular applications in marine and underwater environments.
 {: lang="en"}
 

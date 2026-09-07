@@ -1,8 +1,8 @@
 # main links links
 main:
-  - title_en: "About"
-    title_zh: "简介"
-    url: "/#about-me"
+  - title_en: "Introduction"
+    title_zh: "个人简介"
+    url: "/#introduction"
 
   - title_en: "Research"
     title_zh: "研究方向"

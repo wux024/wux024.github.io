@@ -11,8 +11,12 @@ layout: compress
 
   <body>
 
+    <div id="page-bg" aria-hidden="true"></div>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+
+    {% if page.url == "/" %}{% include hero.html %}{% endif %}
 
     <div id="main" role="main"{% if page.url == "/" %} class="homepage"{% endif %}>
       {% unless page.url == "/" %}

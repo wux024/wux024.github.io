@@ -354,7 +354,7 @@ html.dark.lang-zh #lang-toggle .lang-option-zh {
 
 html.dark {
     body {
-        background-color: $dark-bg;
+        background: transparent;
         color: $dark-text;
     }
 
@@ -371,12 +371,12 @@ html.dark {
     }
 
     .masthead {
-        background-color: $dark-bg;
+        background-color: rgba(26, 28, 33, 0.78);
         border-bottom-color: $dark-border;
     }
 
     .greedy-nav {
-        background-color: $dark-bg;
+        background-color: transparent;
         a {
             color: $dark-muted;
         }
@@ -607,18 +607,26 @@ html.dark .not-found {
 .chip-purple { background-color: rgba(126, 87, 194, 0.12); color: #5e35b1; }
 .chip-green { background-color: rgba(67, 160, 71, 0.12); color: #2e7d32; }
 
-/* Hero Banner */
-.hero-banner {
-    position: relative;
+/* Fixed full-page background layer */
+#page-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    aspect-ratio: 3 / 2;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 2em;
-    margin-top: 1em;
-    background-color: #1a1c21;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -2;
 
-    /* Background image layer, always fills the panel */
+    &.hero-day {
+        background-image: url('/images/jmu-lake.jpg');
+    }
+
+    &.hero-sunset {
+        background-image: url('/images/jmu-sunset.jpg');
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -626,39 +634,39 @@ html.dark .not-found {
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        z-index: 1;
+        background: linear-gradient(180deg, rgba(20, 45, 90, 0.25) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.35) 100%);
     }
+}
 
-    &.hero-day::after {
-        background-image: url('/images/jmu-lake.jpg');
-    }
+html.dark #page-bg {
+    background-image: url('/images/jmu-sunset.jpg');
 
-    &.hero-sunset::after {
-        background-image: url('/images/jmu-sunset.jpg');
+    &::after {
+        background: linear-gradient(180deg, rgba(10, 15, 30, 0.55) 0%, rgba(10, 15, 30, 0.65) 50%, rgba(0, 0, 0, 0.75) 100%);
     }
+}
 
-    &__overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(34, 75, 141, 0.6) 0%, rgba(20, 45, 90, 0.5) 50%, rgba(0, 0, 0, 0.35) 100%);
-        z-index: 2;
-    }
+body {
+    background: transparent;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 3.2em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__content {
         position: relative;
         z-index: 2;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2.5em 3em;
+        padding: 3em 1.5em;
         color: #fff;
         text-align: center;
     }
@@ -720,59 +728,50 @@ html.dark .not-found {
 
     &__links {
         display: flex;
-        gap: 1em;
-        margin-top: 0.5em;
+        gap: 0.8em;
+        margin-top: 0.8em;
 
         a {
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 1.3em;
-            transition: color 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.15em;
             text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 
             &:hover {
-                color: #fff;
-                transform: scale(1.15);
+                transform: translateY(-2px) scale(1.08);
+                filter: brightness(1.12);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
             }
         }
-    }
 
-    @include breakpoint($small) {
-        aspect-ratio: 4 / 3;
-
-        &__content {
-            padding: 1.5em 1.5em;
+        a[title="Email"] {
+            background: #DB4437;
         }
 
-        &__avatar {
-            width: min(180px, 38vw, 30vh);
+        a[title="Google Scholar"] {
+            background: #4285C4;
         }
 
-        &__title {
-            font-size: 1.6em;
+        a[title="GitHub"] {
+            background: #24292F;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.28);
         }
 
-        &__subtitle {
-            font-size: 1em;
-        }
-    }
-
-    @include breakpoint($large) {
-        aspect-ratio: 3 / 2;
-
-        &__content {
-            padding: 3em 4em;
-        }
-
-        &__title {
-            font-size: 2.4em;
+        a[title="ORCID"] {
+            background: #A6CE39;
         }
     }
 
     @include breakpoint(max-width $small) {
-        aspect-ratio: auto;
-
         &__content {
-            padding: 1.8em 1.2em;
+            padding: 2em 1.2em;
         }
 
         &__avatar {
@@ -804,9 +803,37 @@ html.dark .not-found {
     }
 }
 
-html.dark .hero-banner {
-    &__overlay {
-        background: linear-gradient(135deg, rgba(20, 30, 55, 0.7) 0%, rgba(15, 22, 40, 0.65) 50%, rgba(0, 0, 0, 0.55) 100%);
+/* Glass cards for content over full-page background */
+.page__content {
+    background: rgba(255, 255, 255, 0.86);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
+    padding: 1em 2.5em 2.5em;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.page__footer-min {
+    background: transparent;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+html {
+    background-color: #fff;
+}
+
+html.dark {
+    background-color: $dark-bg;
+
+    .page__content {
+        background: rgba(26, 28, 33, 0.82);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .page__footer-min {
+        color: $dark-muted;
+        text-shadow: none;
     }
 }
 

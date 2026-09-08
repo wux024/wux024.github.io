@@ -10,7 +10,7 @@
   <div class="edu-item">
     <div class="edu-icon"><i class="fas fa-user-graduate"></i></div>
     <div class="edu-content">
-      <div class="edu-degree">Ph.D.</div>
+      <div class="edu-degree">Doctor</div>
       <div class="edu-school">School of Physics, Northeast Normal University</div>
       <div class="edu-meta"><span class="edu-date">2023.09 - 2026.06</span> · <span class="edu-location">Changchun</span></div>
     </div>

@@ -30,9 +30,9 @@
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [LUO-V2 and MSPerception: A multi-fin co-drive robotic fish and its multi-sensor-based experimental system](https://doi.org/10.1016/j.oceaneng.2024.119273). <span class="pub-journal">Ocean Engineering</span>, 312, 119273.
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhang, L., Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://ieeexplore.ieee.org/document/10647107). <span class="pub-journal">IEEE Journal of Oceanic Engineering</span>, 49(4), 1220–1232.
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhang, L., Huang, J., & Wang, L. (2024). [Underwater image enhancement via modeling white degradation](https://doi.org/10.1109/JOE.2024.3429653). <span class="pub-journal">IEEE Journal of Oceanic Engineering</span>, 49(4), 1220–1232.
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://ieeexplore.ieee.org/document/10471313). <span class="pub-journal">IEEE Sensors Journal</span>, 24(8), 13293–13303. <a href="https://github.com/wux024/AdamPosePlug" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Huang, J., & Wang, L. (2024). [Pose estimation-based visual perception system for analyzing fish swimming](https://doi.org/10.1109/JSEN.2024.3374236). <span class="pub-journal">IEEE Sensors Journal</span>, 24(8), 13293–13303. <a href="https://github.com/wux024/AdamPosePlug" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ Zhang, Q., **Wu, X.**, Wang, L., & Huang, J. (2024). [Self-equilibrium segmentation of near-infrared images of dental microcracks](https://doi.org/10.1016/j.infrared.2024.105246). <span class="pub-journal">Infrared Physics & Technology</span>, 138, 105246.
 

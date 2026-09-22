@@ -1,0 +1,34 @@
+name: Daily publications sync
+
+on:
+  schedule:
+    - cron: "0 19 * * *" # UTC 19:00 = 北京时间次日凌晨 03:00
+  workflow_dispatch: # 允许在 Actions 页面手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check ORCID for new publications
+        run: python scripts/update_pubs.py
+
+      - name: Commit and push if updated
+        run: |
+          if git diff --quiet -- _pages/includes/pub.md; then
+            echo "No new publications, nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _pages/includes/pub.md
+            git commit -m "Auto: add new publication(s) from ORCID"
+            git push
+          fi

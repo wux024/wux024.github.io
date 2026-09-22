@@ -1,0 +1,11 @@
+{
+  "_说明": "论文 DOI(小写) -> GitHub 仓库链接。单链接用字符串，多链接用数组。脚本生成条目时自动带出 Code 链接。",
+  "10.1016/j.engappai.2025.112749": "https://github.com/wux024/mmpose/tree/main/configs/animal_2d_keypoint/animalvitpose",
+  "10.1016/j.neunet.2025.107685": "https://github.com/wux024/ultralytics/tree/animalrtpose/configs",
+  "10.3788/col202523.091101": "https://github.com/wux024/SPCPose",
+  "10.1109/jsen.2024.3374236": "https://github.com/wux024/AdamPosePlug",
+  "10.1016/j.engappai.2022.104667": [
+    "https://github.com/wux024/AdamPose",
+    "https://github.com/wux024/AdamPosePlug"
+  ]
+}

@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
+url                      : "https://wux024.github.io"
 title                    : "Xin Wu (吴鑫)"
 description              : "Optoelectronic information processing, intelligent perception, computer vision."
 repository               : "wux024/wux024.github.io"
@@ -61,9 +62,7 @@ author:
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -148,12 +147,4 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+  - jekyll-redirect-from

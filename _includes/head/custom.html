@@ -3,8 +3,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="assets/css/academicons.min.css?v=20260907-1"/>
-<link rel="stylesheet" href="assets/css/inter.css?v=20260907-1"/>
+<link rel="stylesheet" href="assets/css/main.css?v=20260922-2">
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 
 <script>
   (function () {
@@ -28,8 +28,11 @@
 
     var l = 'en';
     try { l = localStorage.getItem('lang') || 'en'; } catch (e) {}
+    /* Language flash prevention: must run before first paint.
+       The button wiring lives in lang-toggle.js; keep both in sync. */
     document.documentElement.classList.remove('lang-en', 'lang-zh');
     document.documentElement.classList.add(l === 'zh' ? 'lang-zh' : 'lang-en');
+    document.documentElement.setAttribute('lang', l === 'zh' ? 'zh-CN' : 'en');
 
     /* Hero background: daily pool 7:00-18:00, fixed sunset otherwise (independent of theme) */
     var pool = [

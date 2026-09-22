@@ -42,7 +42,15 @@
       hlinks.classList.toggle("hidden");
     });
 
-    window.addEventListener("resize", updateNav);
+    var resizePending = false;
+    window.addEventListener("resize", function () {
+      if (resizePending) return;
+      resizePending = true;
+      window.requestAnimationFrame(function () {
+        resizePending = false;
+        updateNav();
+      });
+    });
     updateNav();
   }
 
@@ -51,12 +59,8 @@
     var btn = document.getElementById("back-to-top");
     if (!btn) return;
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 300) {
-        btn.classList.add("visible");
-      } else {
-        btn.classList.remove("visible");
-      }
-    });
+      btn.classList.toggle("visible", window.scrollY > 300);
+    }, { passive: true });
     btn.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
@@ -87,8 +91,10 @@
 
       var group = document.createElement("div");
       group.className = "pub-year-group";
+      var collapsed = firstYear ? "" : "collapsed";
+
       group.innerHTML =
-        '<div class="pub-year-header">' +
+        '<div class="pub-year-header" role="button" tabindex="0" aria-expanded="' + (firstYear ? "true" : "false") + '">' +
         "<span>" + yearText + ' <span class="pub-year-count">\u00b7 ' + entries.length + "</span></span>" +
         '<i class="fas fa-chevron-down pub-year-arrow" style="transform: rotate(' + arrowDeg + 'deg);"></i>' +
         "</div>" +
@@ -104,16 +110,28 @@
       firstYear = false;
     });
 
-    section.addEventListener("click", function (e) {
-      var header = e.target.closest(".pub-year-header");
-      if (!header) return;
+    function toggleGroup(header) {
       var group = header.parentElement;
       var content = group.querySelector(".pub-year-content");
       var arrow = header.querySelector(".pub-year-arrow");
       content.classList.toggle("collapsed");
-      arrow.style.transform = content.classList.contains("collapsed")
-        ? "rotate(-90deg)"
-        : "rotate(0deg)";
+      var collapsed = content.classList.contains("collapsed");
+      header.setAttribute("aria-expanded", collapsed ? "false" : "true");
+      arrow.style.transform = collapsed ? "rotate(-90deg)" : "rotate(0deg)";
+    }
+
+    section.addEventListener("click", function (e) {
+      var header = e.target.closest(".pub-year-header");
+      if (!header) return;
+      toggleGroup(header);
+    });
+
+    section.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var header = e.target.closest(".pub-year-header");
+      if (!header) return;
+      e.preventDefault();
+      toggleGroup(header);
     });
   }
 
@@ -164,6 +182,32 @@
     });
   }
 
+  /* ===== Hero avatar click ripple + bounce effect ===== */
+  function initHeroAvatar() {
+    var avatar = document.getElementById("heroAvatar");
+    if (!avatar) return;
+    var wrapper = avatar.parentElement;
+
+    avatar.addEventListener("click", function () {
+      avatar.classList.remove("clicked");
+      /* Force reflow to restart animation */
+      void avatar.offsetWidth;
+      avatar.classList.add("clicked");
+
+      var ripple = document.createElement("span");
+      ripple.className = "hero-banner__avatar-ripple";
+      wrapper.appendChild(ripple);
+
+      setTimeout(function () {
+        ripple.remove();
+      }, 700);
+    });
+
+    avatar.addEventListener("animationend", function () {
+      avatar.classList.remove("clicked");
+    });
+  }
+
   /* ===== Init ===== */
   function ready(fn) {
     if (document.readyState !== "loading") {
@@ -179,5 +223,6 @@
     initPubCollapse();
     initDarkMode();
     initExternalLinks();
+    initHeroAvatar();
   });
 })();

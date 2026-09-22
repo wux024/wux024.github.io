@@ -13,6 +13,7 @@
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+  <meta name="description" content="{{ seo_description }}">
 {% endif %}
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
@@ -30,11 +31,15 @@
 {% endif %}
 
 <meta property="og:locale" content="en">
+<meta property="og:locale:alternate" content="zh_CN">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:type" content="website">
 <meta property="og:description" content="{{ seo_description }}">
 <meta property="og:image" content="https://wux024.github.io/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Xin Wu (吴鑫)">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
@@ -71,4 +76,27 @@
 {% if site.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Xin Wu",
+  "alternateName": "吴鑫",
+  "url": "{{ seo_url | default: 'https://wux024.github.io' }}/",
+  "image": "https://wux024.github.io/images/og-image.jpg",
+  "jobTitle": "Researcher",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "{{ site.author.employer }}",
+    "department": { "@type": "Organization", "name": "{{ site.author.bio }}" }
+  },
+  "email": "mailto:{{ site.author.email }}",
+  "sameAs": [
+    {%- if site.author.googlescholar -%}"{{ site.author.googlescholar }}"{%- endif -%}
+    {%- if site.author.orcid -%},"{{ site.author.orcid }}"{%- endif -%}
+    {%- if site.author.github -%},"https://github.com/{{ site.author.github }}"{%- endif -%}
+  ]
+}
+</script>
 <!-- end SEO -->

@@ -1,4 +1,7 @@
-/* lang-toggle.js - English/Chinese language switcher */
+/* lang-toggle.js - English/Chinese language switcher
+   Note: the initial language class is applied inline in _includes/head/custom.html
+   (before first paint, to avoid a flash of both languages). This file owns the
+   toggle button and re-applies the same state at DOMContentLoaded. */
 (function () {
   "use strict";
 

@@ -1,9 +1,9 @@
-<span class='anchor' id='education'></span>
+<span class='anchor' id='experience'></span>
 
-# Education
+# Experience
 {: lang="en"}
 
-# 教育经历
+# 经历
 {: lang="zh"}
 
 <div class="edu-list" lang="en">

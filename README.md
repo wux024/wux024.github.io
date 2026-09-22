@@ -11,7 +11,7 @@ The site is based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.git
 - `_pages/includes/intro.md`: short biography.
 - `_pages/includes/research.md`: research interests.
 - `_pages/includes/pub.md`: selected publications and full publication list.
-- `_pages/includes/others.md`: education history.
+- `_pages/includes/others.md`: experience (education) history.
 - `_data/navigation.yml`: top navigation links.
 - `assets/css/main.scss`: main style entry and local custom styles.
 
@@ -39,7 +39,7 @@ Most homepage edits should be made in `_pages/includes/`:
 - Edit `intro.md` for the biography paragraph.
 - Edit `research.md` for research interests.
 - Edit `pub.md` for selected and full publications.
-- Edit `others.md` for education information.
+- Edit `others.md` for experience (education) information.
 
 When adding a new homepage section, include it from `_pages/about.md` and add a matching anchor in `_data/navigation.yml` if it should appear in the top navigation.
 

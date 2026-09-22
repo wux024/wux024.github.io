@@ -8,9 +8,9 @@ main:
     title_zh: "研究方向"
     url: "/#research"
 
-  - title_en: "Education"
-    title_zh: "教育经历"
-    url: "/#education"
+  - title_en: "Experience"
+    title_zh: "经历"
+    url: "/#experience"
 
   - title_en: "Publications"
     title_zh: "出版物"

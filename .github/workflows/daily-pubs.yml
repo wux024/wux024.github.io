@@ -1,8 +1,8 @@
-name: Daily publications sync
+name: Weekly publications sync
 
 on:
   schedule:
-    - cron: "0 19 * * *" # UTC 19:00 = 北京时间次日凌晨 03:00
+    - cron: "0 19 * * 0" # UTC 周日 19:00 = 北京时间每周一凌晨 03:00
   workflow_dispatch: # 允许在 Actions 页面手动触发
 
 permissions:

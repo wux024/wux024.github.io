@@ -85,7 +85,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-  - google_scholar_crawler
   - github_myprofile_updater
   - docs
 keep_files:

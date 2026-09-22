@@ -20,7 +20,7 @@
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., & Song, L. (2025). [Cross-species pose estimation via ultra-low compression ratio array-light-based single-pixel imaging](https://doi.org/10.1016/j.optlaseng.2025.109198). <span class="pub-journal">Optics and Lasers in Engineering</span>, 194, 109198.
 
-➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., Song, L., & Han, S. (2025). [Image-free cross-species pose estimation via ultra-low sampling rate single-pixel camera](https://opg.optica.org/col/abstract.cfm?uri=col-23-9-091101). <span class="pub-journal">Chinese Optics Letters</span>, 23(9), 091101. <a href="https://github.com/wux024/SPCPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
+➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Zhou, C., Li, B., Huang, J., Meng, Y., Song, L., & Han, S. (2025). [Image-free cross-species pose estimation via ultra-low sampling rate single-pixel camera](https://doi.org/10.3788/COL202523.091101). <span class="pub-journal">Chinese Optics Letters</span>, 23(9), 091101. <a href="https://github.com/wux024/SPCPose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 
 ➤ He, Y., **Wu, X.**, & Huang, J. (2025). [Dual-mode NIR spectroscopy integrating characteristic wavelengths and broadband spectra for non-invasive glucose measurement](https://doi.org/10.1016/j.infrared.2025.106126). <span class="pub-journal">Infrared Physics & Technology</span>, 151, 106126.
 

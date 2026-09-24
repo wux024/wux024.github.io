@@ -898,95 +898,73 @@ html.dark .page__content ul li:before {
     }
 }
 
-/* Education timeline */
+/* Experience / education rows (compact single-line list) */
 .edu-list {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    margin-top: 0.5em;
+    margin-top: 0.6em;
 }
 
-.edu-item {
+.edu-row {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 1em;
-    padding: 1em 1.2em;
-    background-color: $lighter-gray;
-    border-radius: 10px;
-    border-left: 3px solid $info-color;
-    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 0.5em 0;
+    border-bottom: 1px solid $border-color;
 
-    &:hover {
-        transform: translateX(4px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &__main {
+        flex: 1 1 auto;
+        min-width: 0;
+        color: $gray;
+
+        strong {
+            font-weight: 600;
+            color: $dark-gray;
+            margin-right: 0.35em;
+        }
+    }
+
+    &__meta {
+        flex: 0 0 auto;
+        font-size: 0.85em;
+        color: $gray;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+    }
+
+    @include breakpoint(max-width $small) {
+        flex-wrap: wrap;
+        gap: 0.2em 1em;
+
+        &__main {
+            flex: 1 1 100%;
+        }
+
+        &__meta {
+            font-size: 0.8em;
+        }
     }
 }
 
-html.dark .edu-item {
-    background-color: $dark-bg-alt;
-    border-left-color: $dark-link;
+html.dark .edu-row {
+    border-bottom-color: $dark-border;
 
-    &:hover {
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    &__main {
+        color: $dark-muted;
+
+        strong {
+            color: $dark-text-strong;
+        }
     }
-}
 
-.edu-icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba($info-color, 0.12);
-    color: $info-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1em;
-}
-
-html.dark .edu-icon {
-    background-color: rgba($dark-link, 0.15);
-    color: $dark-link;
-}
-
-.edu-content {
-    flex: 1;
-    min-width: 0;
-}
-
-.edu-degree {
-    font-weight: 600;
-    font-size: 1.05em;
-    color: $dark-gray;
-    margin-bottom: 0.2em;
-}
-
-html.dark .edu-degree {
-    color: $dark-text-strong;
-}
-
-.edu-school {
-    font-size: 0.95em;
-    color: $gray;
-    margin-bottom: 0.3em;
-}
-
-html.dark .edu-school {
-    color: $dark-muted;
-}
-
-.edu-meta {
-    font-size: 0.85em;
-    color: $gray;
-}
-
-html.dark .edu-meta {
-    color: $dark-muted;
-    opacity: 0.8;
-}
-
-.edu-date {
-    font-weight: 500;
+    &__meta {
+        color: $dark-muted;
+        opacity: 0.85;
+    }
 }
 
 /* Honors list - removed (unused); section reserved if needed later */

@@ -7,6 +7,8 @@
 {: lang="zh"}
 
 ### 2026
+➤ <span class="pub-badge pub-corr">Corresponding Author</span> Jie, T., Hua, R., **Wu, X.**, & Wang, L. (2026). [A data-driven miniature water-flow vector sensor via dynamic pressure gradient inversion](https://doi.org/10.1016/j.oceaneng.2026.128388). <span class="pub-journal">Ocean Engineering</span>, 368, 128388.
+
 
 ➤ <span class="pub-badge pub-first">First Author</span> **Wu, X.**, Wang, Y., Wang, L., Huang, J. (2026). [Cross-species animal pose estimation via feature map orthogonal decomposition decoder](https://doi.org/10.1016/j.engappai.2025.112749). <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>, 163, 112749. <a href="https://github.com/wux024/mmpose/tree/main/configs/animal_2d_keypoint/animalvitpose" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>
 

@@ -218,7 +218,15 @@ def load_code_links() -> dict:
     return {k.lower(): v for k, v in links.items()}
 
 
+def configure_console_encoding() -> None:
+    """Keep Unicode status messages printable in Windows consoles using GBK."""
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
+
+
 def main():
+    configure_console_encoding()
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     dry = "--dry-run" in sys.argv
     lines = PUB_MD.read_text(encoding="utf-8").splitlines()

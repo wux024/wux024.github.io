@@ -13,7 +13,10 @@ update_pubs.py — 自动把新论文加进 _pages/includes/pub.md
   Crossref(https://api.crossref.org)     — 按 DOI 取官方元数据(作者/期刊/卷期页)
 
 ORCID iD 自动从 _config.yml 的 author.orcid 读取。
+通讯作者协议: _config.yml 的 author.corresponding 列出通讯作者姓名(英文写 "Family, I."，
+中文写全名)，条目作者与之匹配(或 pub_flags.json 按 DOI 指定)时加 Corresponding Author 徽章。
 论文 <-> 代码仓库的对应关系在 scripts/code_links.json 里维护(可选)。
+个别论文需强制标注/豁免时, 在 scripts/pub_flags.json 里写 {"<doi>": {"corresponding": true}}(可选)。
 """
 
 import json
@@ -26,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "_config.yml"
 PUB_MD = ROOT / "_pages" / "includes" / "pub.md"
 CODE_LINKS = ROOT / "scripts" / "code_links.json"
+PUB_FLAGS = ROOT / "scripts" / "pub_flags.json"
 
 UA = "wux024.github.io-pub-sync/1.0 (mailto:wux024@github.com; GitHub Pages site updater)"
 
@@ -84,13 +88,60 @@ def orcid_owner_name(orcid: str) -> tuple:
         return "wu", "x"
 
 
-def fmt_authors(crossref_authors: list, self_name: tuple) -> str:
-    def short(a):
+def fmt_author_short(a: dict) -> str:
+    fam = (a.get("family") or "").strip()
+    giv = (a.get("given") or "").strip()
+    inits = ". ".join(p[0].upper() for p in giv.split() if p) + "."
+    return f"{fam}, {inits}"
+
+
+def _norm_name(s: str) -> str:
+    return re.sub(r"[\s.·]", "", s).lower()
+
+
+def read_corresponding() -> list:
+    """读 _config.yml 里 author.corresponding（通讯作者名单）。
+    支持块列表或流式 [a; b]（分号分隔，避免与 "Family, I." 里的逗号冲突）。"""
+    names, in_block = [], False
+    for line in CONFIG.read_text(encoding="utf-8").splitlines():
+        if not in_block:
+            m = re.match(r"^\s*corresponding\s*:\s*(.*)$", line)
+            if not m:
+                continue
+            raw = m.group(1).strip()
+            if raw.startswith("[") and raw.endswith("]"):
+                names += [s.strip().strip("\"'") for s in raw[1:-1].split(";") if s.strip()]
+            elif raw:
+                names.append(raw.strip("\"'"))
+            else:
+                in_block = True
+        elif re.match(r"^\s*-\s+\S", line):
+            names.append(re.sub(r"^\s*-\s+", "", line).strip().strip("\"'"))
+        else:
+            break
+    return names
+
+
+def load_json_mapping(path: Path) -> dict:
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {}
+
+
+def is_corresponding(doi: str, crossref_authors: list, corr_names: list, pub_flags: dict) -> bool:
+    """按 DOI 强制标注，或作者姓名与通讯作者名单匹配（英文 "Family, I." 或中文全名）。"""
+    if pub_flags.get(doi, {}).get("corresponding"):
+        return True
+    corr_norms = {_norm_name(n) for n in corr_names}
+    for a in crossref_authors:
         fam = (a.get("family") or "").strip()
         giv = (a.get("given") or "").strip()
-        inits = ". ".join(p[0].upper() for p in giv.split() if p) + "."
-        return f"{fam}, {inits}"
+        if _norm_name(fmt_author_short(a)) in corr_norms or _norm_name(fam + giv) in corr_norms:
+            return True
+    return False
 
+
+def fmt_authors(crossref_authors: list, self_name: tuple) -> str:
     def is_self(a):
         fam, giv = self_name
         return (a.get("family") or "").strip().lower() == fam and \
@@ -98,7 +149,7 @@ def fmt_authors(crossref_authors: list, self_name: tuple) -> str:
 
     names = []
     for a in crossref_authors:
-        s = short(a)
+        s = fmt_author_short(a)
         if is_self(a):
             s = f"**{s}**"
         names.append(s)
@@ -109,12 +160,13 @@ def fmt_authors(crossref_authors: list, self_name: tuple) -> str:
     return body
 
 
-def build_entry(meta: dict, self_name: tuple, code_links: dict) -> str:
+def build_entry(meta: dict, self_name: tuple, code_links: dict, corr_names: list, pub_flags: dict) -> str:
     year = (meta.get("issued", {}).get("date-parts") or [[None]])[0][0] or "n.d."
     title = (meta.get("title") or [""])[0].strip()
     journal = (meta.get("container-title") or [""])[0].strip()
     doi = meta["DOI"].lower()
-    authors = fmt_authors(meta.get("authors") or meta.get("author") or [], self_name)
+    authors_list = meta.get("authors") or meta.get("author") or []
+    authors = fmt_authors(authors_list, self_name)
 
     vol, issue = meta.get("volume", ""), meta.get("issue", "")
     pages = meta.get("page") or meta.get("article-number") or ""
@@ -130,8 +182,13 @@ def build_entry(meta: dict, self_name: tuple, code_links: dict) -> str:
         for url in ([links] if isinstance(links, str) else links):
             entry += f' <a href="{url}" class="pub-link"><i class="fab fa-fw fa-github"></i>Code</a>'
 
+    badges = ""
     if authors.startswith("**"):
-        entry = '➤ <span class="pub-badge pub-first">First Author</span> ' + entry[len("➤ "):]
+        badges += '<span class="pub-badge pub-first">First Author</span> '
+    if is_corresponding(doi, authors_list, corr_names, pub_flags):
+        badges += '<span class="pub-badge pub-corr">Corresponding Author</span> '
+    if badges:
+        entry = "➤ " + badges + entry[len("➤ "):]
     return entry
 
 
@@ -157,9 +214,8 @@ def insert_entry(lines: list, year: str, entry: str) -> list:
 
 
 def load_code_links() -> dict:
-    if CODE_LINKS.exists():
-        return {k.lower(): v for k, v in json.loads(CODE_LINKS.read_text(encoding="utf-8")).items()}
-    return {}
+    links = load_json_mapping(CODE_LINKS)
+    return {k.lower(): v for k, v in links.items()}
 
 
 def main():
@@ -168,6 +224,8 @@ def main():
     lines = PUB_MD.read_text(encoding="utf-8").splitlines()
     known = existing_dois(lines)
     code_links = load_code_links()
+    corr_names = read_corresponding()
+    pub_flags = load_json_mapping(PUB_FLAGS)
     orcid = read_orcid()
     self_name = orcid_owner_name(orcid)
 
@@ -186,7 +244,7 @@ def main():
     for label, doi in targets:
         try:
             meta = crossref(doi)
-            entry = build_entry(meta, self_name, code_links)
+            entry = build_entry(meta, self_name, code_links, corr_names, pub_flags)
             year = (meta.get("issued", {}).get("date-parts") or [[None]])[0][0] or "n.d."
             print(f"[NEW] {year} | {entry}")
             if not dry:

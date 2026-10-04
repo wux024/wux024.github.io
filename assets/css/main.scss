@@ -68,6 +68,11 @@ h1:before, .anchor:before {
     color: #fff;
 }
 
+.pub-corr {
+    background-color: #8d2230;
+    color: #fff;
+}
+
 .pub-journal {
     color: #224b8d;
     font-weight: 600;
@@ -383,6 +388,11 @@ html.dark {
     .pub-badge.pub-first {
         background-color: #2f5fb3;
         color: #eef2fb;
+    }
+
+    .pub-badge.pub-corr {
+        background-color: #a84a58;
+        color: #fbeef0;
     }
 
     .pub-journal {

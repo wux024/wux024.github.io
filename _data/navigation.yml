@@ -4,6 +4,10 @@ main:
     title_zh: "个人简介"
     url: "/#introduction"
 
+  - title_en: "News"
+    title_zh: "最新动态"
+    url: "/#news"
+
   - title_en: "Research"
     title_zh: "研究方向"
     url: "/#research"
@@ -15,7 +19,3 @@ main:
   - title_en: "Publications"
     title_zh: "出版物"
     url: "/#publications"
-
-  - title_en: "Software"
-    title_zh: "开源项目"
-    url: "/#software"

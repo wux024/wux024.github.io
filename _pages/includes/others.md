@@ -8,6 +8,11 @@
 
 <div class="edu-list" lang="en">
   <div class="edu-item">
+    <div class="edu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+    <div class="edu-main">School of Ocean Information Engineering, Jimei University</div>
+    <div class="edu-meta">2026.10 – present · Xiamen</div>
+  </div>
+  <div class="edu-item">
     <div class="edu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
     <div class="edu-main"><strong>Doctor</strong> School of Physics, Northeast Normal University</div>
     <div class="edu-meta">2023.09 – 2026.06 · Changchun</div>
@@ -30,6 +35,11 @@
 </div>
 
 <div class="edu-list" lang="zh">
+  <div class="edu-item">
+    <div class="edu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+    <div class="edu-main">集美大学 海洋信息工程学院</div>
+    <div class="edu-meta">2026.10 – 至今 · 厦门</div>
+  </div>
   <div class="edu-item">
     <div class="edu-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
     <div class="edu-main"><strong>博士</strong>东北师范大学 物理学院</div>
